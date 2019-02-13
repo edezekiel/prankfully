@@ -20,7 +20,7 @@ class HomePage extends Component {
         </p>
 
         <p>
-        Prankfully was born when my Abigail and Ella wanted to make a prank business.
+        Prankfully was born when Abigail and Ella wanted to make a prank business.
         </p>
 
         <p>
