@@ -20,11 +20,11 @@ class HomePage extends Component {
         </p>
 
         <p>
-        Prankfully was born when my friend Ella and I wanted to make a prank business.
+        Prankfully was born when my Abigail and Ella wanted to make a prank business.
         </p>
 
         <p>
-        Our first prank was on Ella's sister, and Ella put white goop on her sister's doornob.
+        Our first prank was on Ella's sister, when Ella put white goop on her sister's doornob.
         </p>
       </Container>
       </div>

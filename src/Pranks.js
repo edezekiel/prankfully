@@ -1,12 +1,18 @@
 import React, { Component } from 'react'
-import { Segment, Header, Grid, Card, Image } from 'semantic-ui-react'
+import { Container, Segment, Header, Grid, Card, Image } from 'semantic-ui-react'
+
+const homeBg = {
+  backgroundImage: "url(https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1057&q=80)",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  height: "100vh"
+};
+
 
 class Pranks extends Component {
-
   state = {
     pranks: [
-
-
       {photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSU7ra4cJEMXvR3ZvLvWUmxTKW0pESmGirahi2rsA636eamSHong", name: "Slime"},
       {photo: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSlUsMD8EC9beUxioE0cuHkcOhO-MQRZoFgQZ8EN45uSIaFbeE8oPoD22eSoJNaGdkPLDSKrlCALA&usqp=CAc", name: "Fake Vomit"},
       {photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYxKdJo2CKqeXnPePtr7mAk4ktE1v49bRyg_wd8mVnJ6v1WMC3", name: "Inside-Out Backpack"},
@@ -17,26 +23,28 @@ class Pranks extends Component {
   }
 
   render(){
+
     return(
-      <Segment basic>
-        <Header as="h2">Our Pranks:</Header>
+      <div style={homeBg}>
         <Segment basic>
-        <Grid>
-        {this.state.pranks.map(prank => {
-          return (
-            <div style={{"padding": "20px"}}>
-            <Card>
-              <Image src={prank.photo} />
-              <Card.Content>
-                <Card.Header>{prank.name}</Card.Header>
-              </Card.Content>
-            </Card>
-            </div>
-          )
-        })}
-        </Grid>
+          <Container>
+          <Grid>
+          {this.state.pranks.map(prank => {
+            return (
+              <div style={{"padding": "20px"}}>
+              <Card>
+                <Image src={prank.photo} />
+                <Card.Content>
+                  <Card.Header>{prank.name}</Card.Header>
+                </Card.Content>
+              </Card>
+              </div>
+            )
+          })}
+          </Grid>
+          </Container>
         </Segment>
-      </Segment>
+      </div>
     )
   }
 }

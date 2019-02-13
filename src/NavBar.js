@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 class NavBar extends Component {
   render(){
     return(
-      <Segment basic inverted >
+      <Segment basic inverted style={{"margin-bottom": "0"}}>
         <Menu inverted size="massive" stackable>
           <Link to="/" className="item">
             <Header inverted as='h3'>Prankfully</Header>
